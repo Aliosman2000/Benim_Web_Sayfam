@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim İlk Web Sayfam!</title>
+    <!-- Stil dosyasını bağlamayı unuttum, o yüzden şimdilik buraya yazıyorum -->
+    <style>
+        /* Bu yorum sadece kendim için, unutmamak için */
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .baslik-kutusu {
+            background-color: white;
+            padding: 20px;
+            margin: 50px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        #ana-baslik {
+            color: darkred;
+            font-size: 36px;
+        }
+
+        .kucuk-yazi {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .resim-kutusu {
+            padding: 10px;
+            border: 1px dashed gray;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            /* Kenarları düz değil, biraz kavisli olsun */
+            border-radius: 5px;
+        }
+
+        /* Hover efekti eklemeyi yeni öğrendim! */
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="baslik-kutusu">
+        <h1 id="ana-baslik">Merhaba Dünya! Bu Benim Web Sayfam</h1>
+        <p class="kucuk-yazi">
+            Merhaba, ben yeni bir yazılımcıyım ve bu benim ilk web sayfam.
+            Çok heyecanlıyım!
+        </p>
+    </div>
+
+    <!-- Birkaç tane div kullanmak hoşuma gitti -->
+    <div style="background-color: salmon; padding: 15px; margin: 20px;">
+        <h2>En Sevdiğim Şeyler</h2>
+        <ul>
+            <li style="color: blue;">Kod yazmak</li>
+            <li>Kahve içmek</li>
+            <li>Kitap okumak</li>
+        </ul>
+    </div>
+
+    <div class="resim-kutusu">
+        <h3>Bir Resim</h3>
+        <!-- Resim bulmak zordu, o yüzden placeholder kullandım -->
+        <img src="https://placehold.co/400x200" alt="Yer tutucu bir resim">
+        <p>Bu, web sayfamı daha güzel göstermek için bir resim.</p>
+    </div>
+    
+    <!-- Sayfanın altı boş kalmasın diye bir buton ekledim -->
+    <button onclick="alert('Henüz bir şey yapmıyor!')">Bana Tıkla</button>
+
+</body>
+</html>
